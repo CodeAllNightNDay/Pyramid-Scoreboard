@@ -1,0 +1,185 @@
+/* Colors */
+
+/*
+Panthers
+
+#d32b34
+#ae2129
+#234d69
+#142b3f
+#f87b06
+#fcfcfc
+
+*/
+
+/*
+Buccanneers
+
+#ba2329
+#e8913f
+#bf511e
+#4e5257
+#d6dadd
+
+*/
+
+/*
+Caprica City News
+#e02d21
+#e55024
+#e8642a
+
+
+
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+#scoreboard {
+  background-image: url("/images/pyramid_stadium.png");
+  background-size: cover;
+  height: 80vh;
+  padding: 4rem;
+}
+
+#scoreboard-background {
+  background: rgba(251, 251, 251, 70%);
+  border: 2px solid #e41c0e;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 80%;
+  padding: 2rem;
+}
+
+.home-guest {
+  font-size: 1.5rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+.score-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+/* Buccaneers */
+
+#buccaneers {
+  color: #e41c0e;
+  width: 25%;
+}
+
+#bucs-title {
+  margin-top: 0;
+}
+
+#buccaneers-total {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.buc-score-btn {
+  background: #111010;
+  color: #e41c0e;
+  font-size: 1.5rem;
+  border: 2px solid #e41c0e;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+/* Game Info */
+
+#game-info {
+  color: #e41c0e;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#time-title {
+  margin-top: 0;
+}
+
+/*
+#timer {
+  background: #E41C0E;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: #e8ecf8;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+*/
+
+#restart {
+  background: #e41c0e;
+  border: 2px solid #e8ecf8;
+  border-radius: 4px;
+  color: #e8ecf8;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+/* Panthers */
+
+#panthers {
+  color: #234d69;
+  width: 25%;
+}
+
+#panthers-title {
+  margin-top: 0;
+}
+
+#panthers-total {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.panth-score-btn {
+  background: #f2f5fc;
+  color: #234d69;
+  font-size: 1.5rem;
+  border: 2px solid #234d69;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width: 900px) {
+  #scoreboard {
+    height: 100vh;
+  }
+
+  #scoreboard-background {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  #game-info {
+    order: 3;
+    margin-top: 1rem;
+  }
+
+  #buccaneers,
+  #panthers {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caprica City News</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section id="scoreboard">
+      <div id="scoreboard-background">
+        <div id="buccaneers">
+          <h2 id="bucs-title">Caprica City Buccaneers</h2>
+          <img
+            class="logo"
+            src="/images/bucs_logo.png"
+            alt="Caprica Buccaneers Logo"
+          />
+          <h4 class="home-guest">Home</h4>
+          <p id="buccaneers-total">0</p>
+          <div id="buccaneers-score" class="score-section">
+            <button class="buc-score-btn" id="bucs-1" onclick="bucsOne()">
+              +1
+            </button>
+            <button class="buc-score-btn"" id="bucs-2" onclick="bucsTwo()">
+              +2
+            </button>
+            <button class="buc-score-btn"" id="bucs-3" onclick="bucsThree()">
+              +3
+            </button>
+          </div>
+        </div>
+
+        <div id="game-info">
+          <!--
+          <h2 id="time-title">Time Left</h2>
+          <button onclick="countDown()">sStart/Restart Countdown</button>
+            <div id="timer">
+              <span id="minutes">15</span> minutes 
+              <span id="seconds">0</span> seconds
+          </div>
+          -->
+          <button id="restart" onclick="reset()">Start New Game</button>
+        </div>
+
+        <div id="panthers">
+          <h2 id="panthers-title">Picon Panthers</h2>
+          <img
+            class="logo"
+            src="images/panthers_logo.png"
+            alt="Picon Panthers logo"
+          />
+          <h4 class="home-guest">Guest</h4>
+          <p id="panthers-total">0</p>
+          <div id="panthers-score" class="score-section">
+            <button class="panth-score-btn" id="pan-1" onclick="panthsOne()">
+              +1
+            </button>
+            <button class="panth-score-btn" id="pan-2" onclick="panthsTwo()">
+              +2
+            </button>
+            <button class="panth-score-btn" id="pan-3" onclick="panthsThree()">
+              +3
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
